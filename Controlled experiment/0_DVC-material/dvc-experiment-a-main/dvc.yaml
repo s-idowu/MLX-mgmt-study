@@ -1,0 +1,43 @@
+stages:
+  prepare:
+    cmd: python src/prepare.py
+    deps:
+    - data/raw
+    - src/prepare.py
+    params:
+    - prepare
+    outs:
+    - data/prepared/test.csv
+    - data/prepared/train.csv
+
+  featurise:
+    cmd: python src/create_features.py
+    deps:
+    - data/prepared/test.csv
+    - data/prepared/train.csv
+    - src/create_features.py
+    outs:
+    - data/features/test_features.csv
+    - data/features/train_features.csv
+
+  train:
+    cmd: python src/train_model.py
+    deps:
+    - data/features/train_features.csv
+    - data/features/train_labels.csv
+    - src/train_model.py
+    params:
+    - train
+    outs:
+    - model/model.pickle
+    
+  evaluate:
+    cmd: python src/evaluate_model.py
+    deps:
+    - data/features/test_features.csv
+    - data/features/test_labels.csv
+    - model/model.pickle
+    - src/evaluate_model.py
+    metrics:
+    - metrics/metrics.json:
+        cache: false

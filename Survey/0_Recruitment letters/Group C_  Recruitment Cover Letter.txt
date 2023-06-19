@@ -1,0 +1,7 @@
+﻿Title: Seeking Qualified Respondents for an Online Survey on Machine Learning Experiment Tools
+
+
+We would like to hear the opinions of machine learning practitioners on machine learning experiment management tools. Experiment management tools support practitioners performing machine learning (ML) or deep learning (DL) experiments to manage all involved artifacts and metadata (datasets, features, scripts, hyperparameters, evaluation metrics, models, …). Such tools are used to reproduce or trace experiments, analyze experiment results, and collaborate with other practitioners. Popular tools are, for instance, Neptune.ai, DVC, or MLFlow. These tools allow users to track or log artifacts when performing experiment runs.
+
+
+Completing the survey takes approximately 10-15  minutes for each ML practitioner.

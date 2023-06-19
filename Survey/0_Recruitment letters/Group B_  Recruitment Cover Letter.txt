@@ -1,0 +1,19 @@
+﻿Subject: A 10-Minute Questionnaire on Tool Support for Machine Learning Experiments
+
+
+Dear [participant]
+
+
+We kindly invite you to a research survey on machine learning experiments. We are contacting you since you contributed to a relevant GitHub project (https://github.com/../../) and provided your email address publicly visible in your GitHub profile.
+ 
+You will be asked to complete an online questionnaire based on your experience managing Machine Learning/Deep Learning experiments with or without specialized experiment management tools to systematically manage all involved artifacts (scripts, datasets, hyperparameters, models, etc.). Hence, you don't need to have used such specialized tools to participate. The survey elicits information on the management tools practitioners adopt and the benefits, challenges, and limitations practitioners experience when using such tools.
+What's in it for you? as a participant, you will learn about experiment management tools. You can also receive our study report to increase your awareness of them and how they can be valuable for you.
+How long will it take? [10-15] mins.
+What's in it for us?  The elicited data will be used in a research context to understand the challenges of ML experiment management and the landscape of ML experiment management tools.
+ 
+Your response will be anonymized and described in a report without revealing your identity or company name. At the end of the questionnaire, we ask you to provide your name and email for verification and analysis (e.g., to identify duplicates), to be informed about the study results, and whether you opt-in for future clarification questions.
+
+
+We kindly invite you to participate and also invite you to forward this invitation to other colleagues who might be interested in this survey. If you have any questions or concerns, please respond to this email.
+ 
+Kindly find the survey questionnaire here -> Link

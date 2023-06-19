@@ -1,0 +1,29 @@
+﻿Cover Letter Email:[Email body for individual participants]
+
+
+Subject: A 10-Minute Questionnaire on Tool Support for Machine Learning Experiments
+
+
+Dear participant, 
+
+
+Since you are an experienced machine learning practitioner, we would like to hear your opinion on "Machine Learning Experiment Management Tools." These tools support practitioners performing machine learning (ML) or deep learning (DL) experiments, systematically managing all involved artifacts (scripts, datasets, hyperparameters, models, …). We kindly invite you to participate and also invite you to forward this invitation to other colleagues who might be interested in this survey.
+
+You will be asked to complete an online questionnaire based on your experience managing ML/DL experiments with or without specialized experiment management tools. Hence, you don't need to use such tools yourself to participate. Our survey elicits information on the management tools practitioners adopt and the benefits, challenges, and limitations practitioners experience when using such tools. 
+
+
+* How long will it take?
+[10-15] mins.
+
+
+* What's in it for you? 
+        As a participant, you will learn about experiment management tools. You can also receive our study report to increase your awareness of them and how they can be valuable for you.
+
+
+* What's in it for us?
+The elicited data will be used in a research context to understand the landscape of ML experiment management tools. 
+
+
+
+
+Kindly find the survey questionnaire here -> Link.

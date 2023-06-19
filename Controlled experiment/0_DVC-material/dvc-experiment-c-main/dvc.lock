@@ -1,0 +1,71 @@
+prepare:
+  cmd: python src/prepare.py
+  deps:
+  - path: data/raw
+    md5: acfb280aa57ca876495a0c5778ca6678.dir
+    size: 39169
+    nfiles: 2
+  - path: src/prepare.py
+    md5: 7df735954f1954ac8b2b3767ef4f6f87
+    size: 852
+  outs:
+  - path: data/prepared/test.csv
+    md5: 5ab0e5ac88dc6cb186109a86077b9b54
+    size: 7968
+  - path: data/prepared/train.csv
+    md5: a7fc1d17aaf38b1faec36e0f55d53e48
+    size: 31264
+featurise:
+  cmd: python src/create_features.py
+  deps:
+  - path: data/prepared/test.csv
+    md5: 5ab0e5ac88dc6cb186109a86077b9b54
+    size: 7968
+  - path: data/prepared/train.csv
+    md5: a7fc1d17aaf38b1faec36e0f55d53e48
+    size: 31264
+  - path: src/create_features.py
+    md5: 264647bd2228fbfeff4fbea024e916c5
+    size: 741
+  outs:
+  - path: data/features/test_features.csv
+    md5: b6f62320f5700a6eca08d27c012aab65
+    size: 1476
+  - path: data/features/train_features.csv
+    md5: 37de504c794eb7e099edcf794146b54e
+    size: 5952
+train:
+  cmd: python src/train_model.py
+  deps:
+  - path: data/features/train_features.csv
+    md5: 37de504c794eb7e099edcf794146b54e
+    size: 5952
+  - path: data/features/train_labels.csv
+    md5: ce715b869e0eab9f1a19be0097435bb6
+    size: 2004
+  - path: src/train_model.py
+    md5: f23e3ad2835d5cae378bb02583f0d4d6
+    size: 671
+  outs:
+  - path: model/model.pickle
+    md5: d959af63eb75729b278f2a26f942d317
+    size: 623756
+evaluate:
+  cmd: python src/evaluate.py
+  deps:
+  - path: data/features/test_features.csv
+    md5: b6f62320f5700a6eca08d27c012aab65
+    size: 1476
+  - path: data/features/test_labels.csv
+    md5: 64b7c4a327a9bfbe01b291771a32c4b0
+    size: 512
+  - path: model/model.pickle
+    md5: d959af63eb75729b278f2a26f942d317
+    size: 623756
+  - path: src/evaluate.py
+    md5: db244528b62829544897d05e92072f01
+    size: 675
+  outs:
+  - path: metrics/metrics.json
+    md5: 9ab4df4b672c18cea5a02fbd9fb8c365
+    size: 60
